@@ -1,28 +1,35 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Arrays</title>
-</head>
-<body>
-    <script type="text/javascript">
-    
-        var myArray = new Array();
 
-        myArray[0] = "Pizza";
-        myArray[1] = "Chocolate";
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Arrays</title>
+    </head>
 
-        var tweets = ["Good Morning America!"," I Love Caffe!"];
+    <body>
+        <script type="text/javascript">
 
-        tweets.push("Lets get to work!");
-       
-        // splice function (int1, int2): where int1 = starting point of splice, and int2 = upto point of splice.
-        // You can add stuff using a splice function as well. 
-        // If second value is set to 0, it will not delete anything.
-        tweets.splice(1,1,"I eat pussy for breakfast!","making num num sounds");
+            let myArray = new Array();
 
-        console.log(tweets);
-    </script>
-</body>
+            myArray[0] = "Pizza";
+            myArray[1] = "Chocolate";
+
+            // splice function (int1, int2): where int1 = starting point of splice, and int2 = upto point of splice.
+            // splice can be used to add objects to an array based on specific indices 
+            myArray.splice(2, 0, "Pears", "Bears", "Dogs");
+            // Output 
+            console.log(myArray);
+
+            let tweets = ["Good Morning America!", "I Love Coaffe!"];
+
+            // push lets us append existing arrays 
+            tweets.push("Lets get to work!");
+            // Another example using splice 
+            tweets.splice(3, 0, "I eat chocolate for breakfast!", "making nom nom sounds");
+            // Output
+            console.log(tweets);
+        </script>
+    </body>
+
 </html>
