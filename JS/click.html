@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CLick</title>
+</head>
+<body>
+    <p id='text'>Hello World</p>
+    <button id='firstButton'>Change Text</button>
+
+    <p id='text2'>Hello World</p>
+    <button id='secButton'> Alert </button>
+
+    <p id='text3'>JavaScript is ... </p>
+    <button id='thirdButton'>Append Text</button>
+
+    <p id='text4'></p>
+    <button id='forthButton'>Add Text</button>
+
+    <p id='text5'>Style Me</p>
+    <button id='fifthButton'>Style Text</button>
+
+    <script>
+    // Changes text on DOM using innerHTML
+    document.getElementById("firstButton").onclick = function () {
+        document.getElementById("text").innerHTML = "Hello Ralph!";
+    }
+
+    // Alert when button is clicked 
+    document.getElementById("secButton").onclick = function () {
+        alert("Button Clicked!")
+    }
+
+    // Append text when button is clicked 
+    document.getElementById("thirdButton").onclick = function () {
+        document.getElementById("text3").innerHTML = "I think " + document.getElementById("text3").innerHTML + "Functionally Amazing!";
+    }
+
+    // Add text when button is clicked 
+    document.getElementById("forthButton").onclick = function () {
+        document.getElementById("text4").innerHTML = "Hello there Ralph! ";
+    }
+    // Styles text when button is clicked 
+    document.getElementById("fifthButton").onclick = function () {
+        document.getElementById("text5").style.color = "pink";
+    }
+
+    </script> 
+</body>
+</html>
