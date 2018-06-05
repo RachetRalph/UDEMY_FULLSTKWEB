@@ -1,51 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>ClickToDisappear</title>
-</head>
-<body>
-    <style>
-        /* Styles the shape of our circle */
-        .circ{
-            width: 200px;
-            height: 200px;
-            margin-right: 25px;
-            border-radius: 50%;
-            float: left;
-        }
-        #redCircle{
-            background-color: red;
-        }
-        #blueCircle{
-            background-color: blue;
-        }
-        #yellowCircle{
-            background-color: yellow;
-        }
-    
-    </style>
 
-    <div class="circ" id="redCircle"></div>
-    <div class="circ" id="blueCircle"></div>
-    <div class="circ" id="yellowCircle"></div>
-    
-    <script>
-        // Using style.display and setting it to none helps us make the circles disappear 
-    document.getElementById("redCircle").onclick = function () {
-            document.getElementById("redCircle").style.display = "none";
-    }
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>ClickToDisappear</title>
+    </head>
 
-    document.getElementById("blueCircle").onclick = function () {
-        document.getElementById("blueCircle").style.display = "none";
-    }
+    <body>
+        <style>
+            /* Styles the shape of our circle */
 
-    document.getElementById("yellowCircle").onclick = function () {
-            document.getElementById("yellowCircle").style.display = "none";
-    }
-    
-    </script>
-</body>
+            .circ {
+                width: 200px;
+                height: 200px;
+                margin-right: 25px;
+                border-radius: 50%;
+                float: left;
+            }
+
+            #redCircle {
+                background-color: red;
+            }
+
+            #blueCircle {
+                background-color: blue;
+            }
+
+            #yellowCircle {
+                background-color: yellow;
+            }
+        </style>
+
+        <div class="circ" id="redCircle"></div>
+        <div class="circ" id="blueCircle"></div>
+        <div class="circ" id="yellowCircle"></div>
+
+        <script>
+            // Using style.display and setting it to none helps us make the circles disappear 
+            document.getElementById("redCircle").onclick = function () {
+                document.getElementById("redCircle").style.display = "none";
+            }
+
+            document.getElementById("blueCircle").onclick = function () {
+                document.getElementById("blueCircle").style.display = "none";
+            }
+
+            document.getElementById("yellowCircle").onclick = function () {
+                document.getElementById("yellowCircle").style.display = "none";
+            }
+
+        </script>
+    </body>
+
 </html>
