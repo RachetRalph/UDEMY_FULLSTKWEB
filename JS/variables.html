@@ -4,24 +4,27 @@
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-     <title>Variables
-     </title>
+     <title>Variables</title>
  </head>
  <body>
-
+    <!-- Creates an input field for out text -->
     <input type="text" id="textInput"> 
-    <button id="butt">Change Text</button>
 
-    <p id="pee">This is some text</p>
+    <!-- Button that initiates text change -->
+    <button id="button">Change Text</button>
+
+    <!-- Paragraph that is to be changed -->
+    <p id="para">This is some text</p>
+
      <script type="text/javascript">
      
-     document.getElementById('butt').onclick = function(){
+     document.getElementById('button').onclick = function(){
 
-        var textEntered = " ";
+        let textEntered = " ";
 
         textEntered = document.getElementById('textInput').value;
 
-        document.getElementById('pee').innerHTML = textEntered;
+        document.getElementById('para').innerHTML = textEntered;
      }
      
      </script>
