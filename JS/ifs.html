@@ -1,31 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>If Statements</title>
-</head>
-<body>
-    <h1>What is the magic word?</h1>
 
-    <p><input type="text" id="magicWord"></p>
-    <p><button id="Check">Enter</button></p>
-    <script>
-    var x = 2;
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>If Statements</title>
+    </head>
 
-  document.getElementById("Check").onclick = function () {
-      var magikEntered = document.getElementById("magicWord").value;
-      var Word = "opensaysme";
+    <body>
 
-      if (magikEntered == Word) {
-          alert("You May Enter!");
-      } else {
-          alert("Access Denied!");
-      }
-  }
-    
-    
-    </script>
-</body>
+        <h1>What is the magic word?</h1>
+
+       <p> <input type="text" id="magicWord"></p>
+        <p><button id="enter">Enter</button></p>
+
+        <script>
+            document.getElementById("enter").onclick = function () {
+                // Obtains input value
+                let wordEntered = document.getElementById("magicWord").value;
+                // Set entryWord for comparison 
+                let entryWord = "SHAZAM";
+                // Logic that dictates the entry or denial 
+                if (wordEntered == entryWord) {
+                    alert("Access Granted!");
+                } else {
+                    alert("Access Denied!");
+                }
+            }
+
+        </script>
+
+    </body>
+
 </html>
